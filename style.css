@@ -1,0 +1,48 @@
+
+ body {
+     font-family: Arial, sans-serif;
+     background: linear-gradient(to right, #000, #0074e4);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh; /* Ensures the full viewport height is covered */
+ }
+ @keyframes intro{
+    from{transform: scale(0.2)}
+    to{transform: scale(1)}
+ }
+ .container {
+    animation-name: intro;
+    animation-duration: 1.5s;
+     max-width: 400px;
+     padding: 20px;
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px 0px #888;
+     text-align: center;
+     height: 60vh;
+ }
+ h1 {
+     color: #333;
+ }
+ input[type="text"], input[type="password"] {
+     width: 80%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+ }
+ input[type="submit"] {
+     background-color: #3498db;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 3px;
+     cursor: pointer;
+ }
+ input[type="submit"]:hover {
+     background-color: #2980b9;
+ }
